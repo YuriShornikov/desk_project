@@ -1,0 +1,115 @@
+/* шириной от 769px или горизонтальное расположение экрана */
+
+@media (min-width: 769px), (orientation: landscape) {
+
+    .btn.sub {
+        width: ;
+    }
+
+    .sub-tool-panel__colors-item {
+        width: 28px;
+        height: 28px;
+        background-color: #33FF00;
+    }
+
+    .top-panel__item-list:nth-child(6) .btn:active {
+        border-radius: 0px;
+    }
+
+
+
+    .sub-tool-panel__lines-item, .sub-tool-panel__width-item {
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+}
+
+
+/* шириной до 768px и в вертикальном расположении */
+
+@media (max-width: 768px) and (orientation: portrait) {
+
+    .top-panel__list {
+        width: auto;
+        
+    }
+
+    .sub-tool-panel__colors-item {
+        background-color: #33FF00;
+    }
+
+    .sub-tool-panel__lines-item {
+        margin: 0px;
+    }
+
+    .square {
+        width: 140px;
+        height: 140px;
+        position: absolute;
+        z-index: 1;
+        top: 140px;
+        left: 149px;
+        border: 4px solid #33FF00;
+    }
+
+    .top-panel__item-list:nth-child(6) .btn:active {
+        border-radius: 0px;
+    }
+
+    .separator.horizont:nth-child(1):before {
+        display: none;
+    }
+
+    .separator.horizont:nth-child(7) {
+        margin-bottom: 40px;
+    }
+
+    .separator.horizont:nth-child(7):before {
+        content: "";
+        position: absolute;
+        height: 40px;
+        border-left: 1px solid #D7D7D7;
+    }
+
+    .sub-tool-panel__width-item {
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .top-panel__item-list:nth-last-child(1) {
+        width: 56px;
+        height: 19px;
+    }
+
+    /* .separator.horizont {
+        margin-bottom: 40px;
+    }
+
+    .separator.horizont::before {
+        content: "";
+        position: absolute;
+        height: 40px;
+        border-left: 1px solid #D7D7D7;
+    } */
+
+}
+
+
+.top-panel__item-list:nth-child(n+7) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.square {
+    display: block;
+}
+
+.sub-tool-panel {
+    display: none;
+}
+
